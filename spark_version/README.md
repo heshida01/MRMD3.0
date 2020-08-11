@@ -1,6 +1,6 @@
 ### 1. environment 
 a. Spark3.0  
-b  java jdk1.8
+b  java jdk1.8  
 c. you need to install the following python packages on the cluster machines：
 
   ```
@@ -22,8 +22,10 @@ c. you need to install the following python packages on the cluster machines：
 |-c, --classifier|classifier(RandomForest,SVM,Bayes) default="RandomForest"|   
 |-r, --rank_method|the rank method for features,choices=["PageRank","Hits_a","Hits_h","LeaderRank","TrustRank"],default="PageRank"|   
 |——————————————————|————————————————| 
+
 ### 3. example：
 The usage simliar to MRMD3.0:
 ```
  ./spark-submit  --master spark://mymaster:7077  --py-files='feature_rank.zip'  spark_mrmd3.0.py  -i test.csv -r PageRank
+ ./spark-submit  --master spark://mymaster:7077  --py-files='feature_rank.zip'  spark_mrmd3.0.py  -i test.csv -r Hits_a
 ```
