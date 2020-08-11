@@ -13,8 +13,15 @@ b. you need to install the following python packages on the cluster machines：
   scipy==1.5.0  
   scikit_learn==0.23.2  
   ```
-
-### 2. example：
+### 2. parameters
+ |parameters|description|
+|:-|:-|  
+|-i, --inputfile|input file (require:csv format)|   
+|-t, --type_metric|evaluation metric(f1,accuracy,precision,recall,auc), default=f1 |   
+|-c, --classifier|classifier(RandomForest,SVM,Bayes) default="RandomForest"|   
+|-r, --rank_method|the rank method for features,choices=["PageRank","Hits_a","Hits_h","LeaderRank","TrustRank"],default="PageRank"|   
+|——————————————————|————————————————| 
+### 3. example：
 The usage simliar to MRMD3.0:
 ```
  ./spark-submit  --master spark://mymaster:7077  --py-files='feature_rank.zip'  spark_mrmd3.0.py  -i test.csv -r PageRank
