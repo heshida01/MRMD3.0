@@ -1,0 +1,154 @@
+[2020-05-15 20:37:25,940]: ---mrmd 2.0 start----
+[2020-05-15 20:38:29,381]: ANOVA start...
+[2020-05-15 20:38:29,581]: ANOVA  end.
+[2020-05-15 20:38:29,581]: mic start...
+[2020-05-15 20:38:31,861]: mic  end.
+[2020-05-15 20:38:31,862]: mrmd start...
+[2020-05-15 20:38:32,524]: mrmd end.
+[2020-05-15 20:38:32,524]: mRMR start...
+[2020-05-15 20:38:34,502]: mRMR end.
+[2020-05-15 20:38:34,502]: linear model start...
+[2020-05-15 20:38:34,872]: linear model end.
+[2020-05-15 20:38:34,872]: chi2 start...
+[2020-05-15 20:38:35,082]: chi2 end.
+[2020-05-15 20:38:35,082]: tree feature importance start...
+[2020-05-15 20:38:36,579]: tree feature importance  end.
+[2020-05-15 20:38:36,580]: F_value start...
+[2020-05-15 20:38:36,784]: F_value  end.
+[2020-05-15 20:38:36,784]: ref start...
+[2020-05-15 20:39:35,088]: ref end.
+[2020-05-15 20:39:35,381]: The final  rank is
+[2020-05-15 20:39:35,381]: Pos10.ZSCALE5 : 0.025545288783865368
+[2020-05-15 20:39:35,381]: Pos5.ZSCALE4 : 0.025402070979850203
+[2020-05-15 20:39:35,382]: Pos2.ZSCALE4 : 0.024914146997311405
+[2020-05-15 20:39:35,382]: Pos2.ZSCALE2 : 0.024679897557526552
+[2020-05-15 20:39:35,382]: Pos3.ZSCALE3 : 0.024549326086373745
+[2020-05-15 20:39:35,382]: Pos11.ZSCALE2 : 0.024458599691926815
+[2020-05-15 20:39:35,382]: Pos9.ZSCALE3 : 0.02362640621028368
+[2020-05-15 20:39:35,382]: Pos10.ZSCALE1 : 0.022821716421995625
+[2020-05-15 20:39:35,382]: Pos11.ZSCALE1 : 0.02272015040179698
+[2020-05-15 20:39:35,382]: Pos9.ZSCALE1 : 0.02240314192112406
+[2020-05-15 20:39:35,382]: Pos3.ZSCALE1 : 0.022243320383424366
+[2020-05-15 20:39:35,383]: Pos7.ZSCALE3 : 0.021920916693845455
+[2020-05-15 20:39:35,383]: Pos5.ZSCALE3 : 0.021843103801934178
+[2020-05-15 20:39:35,383]: Pos1.ZSCALE2 : 0.02134387115300449
+[2020-05-15 20:39:35,383]: Pos10.ZSCALE4 : 0.02125439725399452
+[2020-05-15 20:39:35,383]: Pos2.ZSCALE1 : 0.021216929214629587
+[2020-05-15 20:39:35,383]: Pos5.ZSCALE5 : 0.0210532007286528
+[2020-05-15 20:39:35,383]: Pos11.ZSCALE3 : 0.020956885854831415
+[2020-05-15 20:39:35,383]: Pos1.ZSCALE4 : 0.020800799757736292
+[2020-05-15 20:39:35,384]: Pos9.ZSCALE5 : 0.02078829037422722
+[2020-05-15 20:39:35,384]: Pos3.ZSCALE5 : 0.020541866613511407
+[2020-05-15 20:39:35,384]: Pos1.ZSCALE3 : 0.02053748146642871
+[2020-05-15 20:39:35,384]: Pos7.ZSCALE4 : 0.02022568268386172
+[2020-05-15 20:39:35,384]: Pos11.ZSCALE5 : 0.020207998493470245
+[2020-05-15 20:39:35,384]: Pos11.ZSCALE4 : 0.019991310030007033
+[2020-05-15 20:39:35,384]: Pos7.ZSCALE1 : 0.01979710233843496
+[2020-05-15 20:39:35,384]: Pos2.ZSCALE3 : 0.019720340270551504
+[2020-05-15 20:39:35,384]: Pos8.ZSCALE3 : 0.01942742060194796
+[2020-05-15 20:39:35,385]: Pos8.ZSCALE5 : 0.0187335363063206
+[2020-05-15 20:39:35,385]: Pos7.ZSCALE5 : 0.018719632787725995
+[2020-05-15 20:39:35,385]: Pos9.ZSCALE2 : 0.018641537405672173
+[2020-05-15 20:39:35,385]: Pos1.ZSCALE1 : 0.018489537206702194
+[2020-05-15 20:39:35,385]: Pos5.ZSCALE2 : 0.018363907228754802
+[2020-05-15 20:39:35,385]: Pos9.ZSCALE4 : 0.01832661680143603
+[2020-05-15 20:39:35,385]: Pos4.ZSCALE2 : 0.01813634688531852
+[2020-05-15 20:39:35,385]: Pos10.ZSCALE3 : 0.018114003430992263
+[2020-05-15 20:39:35,385]: Pos3.ZSCALE2 : 0.018102647117479238
+[2020-05-15 20:39:35,386]: Pos10.ZSCALE2 : 0.017970051520419826
+[2020-05-15 20:39:35,386]: Pos4.ZSCALE3 : 0.017845847360478694
+[2020-05-15 20:39:35,386]: Pos3.ZSCALE4 : 0.017438932944630357
+[2020-05-15 20:39:35,386]: Pos8.ZSCALE1 : 0.017381747362019424
+[2020-05-15 20:39:35,386]: Pos4.ZSCALE5 : 0.017059606451353456
+[2020-05-15 20:39:35,386]: Pos1.ZSCALE5 : 0.016788253184257772
+[2020-05-15 20:39:35,386]: Pos2.ZSCALE5 : 0.016554697306586142
+[2020-05-15 20:39:35,386]: Pos5.ZSCALE1 : 0.016466046525357183
+[2020-05-15 20:39:35,386]: Pos6.ZSCALE2 : 0.01629988580058955
+[2020-05-15 20:39:35,387]: Pos8.ZSCALE4 : 0.016225638253721697
+[2020-05-15 20:39:35,387]: Pos4.ZSCALE4 : 0.014692138624230003
+[2020-05-15 20:39:35,387]: Pos4.ZSCALE1 : 0.014623566509655704
+[2020-05-15 20:39:35,387]: Pos8.ZSCALE2 : 0.01392358109575987
+[2020-05-15 20:39:35,387]: Pos7.ZSCALE2 : 0.006110579123990226
+[2020-05-15 20:39:35,775]: Start dimension reduction ...
+[2020-05-15 20:39:39,610]: length=1 f1=0.5875 accuarcy=0.5881 precision=0.5885 recall=0.5881 auc=0.5881 
+[2020-05-15 20:39:40,623]: length=2 f1=0.6627 accuarcy=0.6642 precision=0.6672 recall=0.6642 auc=0.6642 
+[2020-05-15 20:39:41,678]: length=3 f1=0.6508 accuarcy=0.6509 precision=0.6510 recall=0.6509 auc=0.6509 
+[2020-05-15 20:39:42,304]: length=4 f1=0.6443 accuarcy=0.6444 precision=0.6445 recall=0.6444 auc=0.6444 
+[2020-05-15 20:39:42,928]: length=5 f1=0.6751 accuarcy=0.6751 precision=0.6751 recall=0.6751 auc=0.6751 
+[2020-05-15 20:39:43,568]: length=6 f1=0.6833 accuarcy=0.6833 precision=0.6833 recall=0.6833 auc=0.6833 
+[2020-05-15 20:39:44,212]: length=7 f1=0.7048 accuarcy=0.7048 precision=0.7048 recall=0.7048 auc=0.7048 
+[2020-05-15 20:39:44,857]: length=8 f1=0.6976 accuarcy=0.6976 precision=0.6976 recall=0.6976 auc=0.6976 
+[2020-05-15 20:39:45,584]: length=9 f1=0.6945 accuarcy=0.6945 precision=0.6946 recall=0.6945 auc=0.6945 
+[2020-05-15 20:39:46,315]: length=10 f1=0.7040 accuarcy=0.7041 precision=0.7043 recall=0.7041 auc=0.7041 
+[2020-05-15 20:39:47,050]: length=11 f1=0.7064 accuarcy=0.7065 precision=0.7066 recall=0.7065 auc=0.7065 
+[2020-05-15 20:39:47,754]: length=12 f1=0.7910 accuarcy=0.7911 precision=0.7918 recall=0.7911 auc=0.7911 
+[2020-05-15 20:39:48,446]: length=13 f1=0.8049 accuarcy=0.8051 precision=0.8062 recall=0.8051 auc=0.8051 
+[2020-05-15 20:39:49,146]: length=14 f1=0.8104 accuarcy=0.8106 precision=0.8117 recall=0.8106 auc=0.8106 
+[2020-05-15 20:39:49,855]: length=15 f1=0.8033 accuarcy=0.8034 precision=0.8043 recall=0.8034 auc=0.8034 
+[2020-05-15 20:39:50,629]: length=16 f1=0.8083 accuarcy=0.8085 precision=0.8098 recall=0.8085 auc=0.8085 
+[2020-05-15 20:39:51,408]: length=17 f1=0.8111 accuarcy=0.8113 precision=0.8124 recall=0.8113 auc=0.8113 
+[2020-05-15 20:39:52,194]: length=18 f1=0.8067 accuarcy=0.8068 precision=0.8077 recall=0.8068 auc=0.8068 
+[2020-05-15 20:39:52,975]: length=19 f1=0.8115 accuarcy=0.8116 precision=0.8126 recall=0.8116 auc=0.8116 
+[2020-05-15 20:39:53,758]: length=20 f1=0.8070 accuarcy=0.8072 precision=0.8080 recall=0.8072 auc=0.8072 
+[2020-05-15 20:39:54,551]: length=21 f1=0.8019 accuarcy=0.8020 precision=0.8030 recall=0.8020 auc=0.8020 
+[2020-05-15 20:39:55,333]: length=22 f1=0.8094 accuarcy=0.8096 precision=0.8103 recall=0.8096 auc=0.8096 
+[2020-05-15 20:39:56,104]: length=23 f1=0.8126 accuarcy=0.8130 precision=0.8152 recall=0.8130 auc=0.8130 
+[2020-05-15 20:39:56,886]: length=24 f1=0.8100 accuarcy=0.8102 precision=0.8120 recall=0.8102 auc=0.8102 
+[2020-05-15 20:39:57,743]: length=25 f1=0.8092 accuarcy=0.8096 precision=0.8119 recall=0.8096 auc=0.8096 
+[2020-05-15 20:39:58,574]: length=26 f1=0.8137 accuarcy=0.8140 precision=0.8159 recall=0.8140 auc=0.8140 
+[2020-05-15 20:39:59,427]: length=27 f1=0.8082 accuarcy=0.8085 precision=0.8109 recall=0.8085 auc=0.8085 
+[2020-05-15 20:40:00,279]: length=28 f1=0.8133 accuarcy=0.8137 precision=0.8160 recall=0.8137 auc=0.8137 
+[2020-05-15 20:40:01,141]: length=29 f1=0.8174 accuarcy=0.8177 precision=0.8205 recall=0.8177 auc=0.8177 
+[2020-05-15 20:40:01,980]: length=30 f1=0.8201 accuarcy=0.8205 precision=0.8231 recall=0.8205 auc=0.8205 
+[2020-05-15 20:40:02,816]: length=31 f1=0.8145 accuarcy=0.8150 precision=0.8184 recall=0.8150 auc=0.8150 
+[2020-05-15 20:40:03,660]: length=32 f1=0.8196 accuarcy=0.8201 precision=0.8242 recall=0.8201 auc=0.8201 
+[2020-05-15 20:40:04,505]: length=33 f1=0.8183 accuarcy=0.8188 precision=0.8222 recall=0.8188 auc=0.8188 
+[2020-05-15 20:40:05,367]: length=34 f1=0.8207 accuarcy=0.8212 precision=0.8243 recall=0.8212 auc=0.8212 
+[2020-05-15 20:40:06,209]: length=35 f1=0.8221 accuarcy=0.8225 precision=0.8258 recall=0.8225 auc=0.8225 
+[2020-05-15 20:40:07,130]: length=36 f1=0.8220 accuarcy=0.8225 precision=0.8264 recall=0.8225 auc=0.8225 
+[2020-05-15 20:40:08,066]: length=37 f1=0.8179 accuarcy=0.8184 precision=0.8219 recall=0.8184 auc=0.8184 
+[2020-05-15 20:40:08,991]: length=38 f1=0.8204 accuarcy=0.8208 precision=0.8238 recall=0.8208 auc=0.8208 
+[2020-05-15 20:40:09,925]: length=39 f1=0.8197 accuarcy=0.8201 precision=0.8236 recall=0.8201 auc=0.8201 
+[2020-05-15 20:40:10,859]: length=40 f1=0.8189 accuarcy=0.8195 precision=0.8231 recall=0.8195 auc=0.8195 
+[2020-05-15 20:40:11,792]: length=41 f1=0.8165 accuarcy=0.8171 precision=0.8210 recall=0.8171 auc=0.8171 
+[2020-05-15 20:40:12,721]: length=42 f1=0.8224 accuarcy=0.8229 precision=0.8263 recall=0.8229 auc=0.8229 
+[2020-05-15 20:40:13,661]: length=43 f1=0.8180 accuarcy=0.8184 precision=0.8218 recall=0.8184 auc=0.8184 
+[2020-05-15 20:40:14,599]: length=44 f1=0.8166 accuarcy=0.8171 precision=0.8201 recall=0.8171 auc=0.8171 
+[2020-05-15 20:40:15,550]: length=45 f1=0.8248 accuarcy=0.8253 precision=0.8287 recall=0.8253 auc=0.8253 
+[2020-05-15 20:40:16,482]: length=46 f1=0.8248 accuarcy=0.8253 precision=0.8287 recall=0.8253 auc=0.8253 
+[2020-05-15 20:40:17,425]: length=47 f1=0.8282 accuarcy=0.8287 precision=0.8324 recall=0.8287 auc=0.8287 
+[2020-05-15 20:40:18,349]: length=48 f1=0.8193 accuarcy=0.8198 precision=0.8234 recall=0.8198 auc=0.8198 
+[2020-05-15 20:40:19,357]: length=49 f1=0.8200 accuarcy=0.8205 precision=0.8239 recall=0.8205 auc=0.8205 
+[2020-05-15 20:40:20,363]: length=50 f1=0.8179 accuarcy=0.8184 precision=0.8224 recall=0.8184 auc=0.8184 
+[2020-05-15 20:40:21,368]: length=51 f1=0.8223 accuarcy=0.8229 precision=0.8267 recall=0.8229 auc=0.8229 
+[2020-05-15 20:40:21,369]: ----------
+[2020-05-15 20:40:21,369]: the max f1 = 0.8282
+[2020-05-15 20:40:21,369]: ['Pos10.ZSCALE5' 'Pos5.ZSCALE4' 'Pos2.ZSCALE4' 'Pos2.ZSCALE2'
+ 'Pos3.ZSCALE3' 'Pos11.ZSCALE2' 'Pos9.ZSCALE3' 'Pos10.ZSCALE1'
+ 'Pos11.ZSCALE1' 'Pos9.ZSCALE1' 'Pos3.ZSCALE1' 'Pos7.ZSCALE3'
+ 'Pos5.ZSCALE3' 'Pos1.ZSCALE2' 'Pos10.ZSCALE4' 'Pos2.ZSCALE1'
+ 'Pos5.ZSCALE5' 'Pos11.ZSCALE3' 'Pos1.ZSCALE4' 'Pos9.ZSCALE5'
+ 'Pos3.ZSCALE5' 'Pos1.ZSCALE3' 'Pos7.ZSCALE4' 'Pos11.ZSCALE5'
+ 'Pos11.ZSCALE4' 'Pos7.ZSCALE1' 'Pos2.ZSCALE3' 'Pos8.ZSCALE3'
+ 'Pos8.ZSCALE5' 'Pos7.ZSCALE5' 'Pos9.ZSCALE2' 'Pos1.ZSCALE1'
+ 'Pos5.ZSCALE2' 'Pos9.ZSCALE4' 'Pos4.ZSCALE2' 'Pos10.ZSCALE3'
+ 'Pos3.ZSCALE2' 'Pos10.ZSCALE2' 'Pos4.ZSCALE3' 'Pos3.ZSCALE4'
+ 'Pos8.ZSCALE1' 'Pos4.ZSCALE5' 'Pos1.ZSCALE5' 'Pos2.ZSCALE5'
+ 'Pos5.ZSCALE1' 'Pos6.ZSCALE2' 'Pos8.ZSCALE4'],length = 47
+[2020-05-15 20:40:21,370]: -----------
+[2020-05-15 20:40:22,325]: ***confusion matrix***
+Predicted   0.0   1.0
+Actual               
+0.0        1292   173
+1.0         329  1136
+[2020-05-15 20:40:22,329]: f1 =0.8282 
+[2020-05-15 20:40:22,330]: accuarcy = 0.8287 
+[2020-05-15 20:40:22,333]: precision =0.8324 
+[2020-05-15 20:40:22,337]: recall =0.8287
+[2020-05-15 20:40:22,342]: auc = 0.8287
+[2020-05-15 20:40:22,603]: -----------
+[2020-05-15 20:40:22,604]: The output by the terminal's log has been saved in the /home/heshida/pycharm_tmp2/Logs/202005152037.log.
+[2020-05-15 20:40:22,604]: metrics have been saved in the /home/heshida/pycharm_tmp2/Results/zscale.metrics.csv.
+[2020-05-15 20:41:31,866]: Scatter charts visualized by t-SNE dataset has been saved in the /home/heshida/pycharm_tmp2/Results/zscale.csv.png.
+[2020-05-15 20:41:31,866]: Reduced dimensional dataset has been saved in the /home/heshida/pycharm_tmp2/Results/onehot_out.csv.
+[2020-05-15 20:41:31,866]: ---mrmd 2.0 end---

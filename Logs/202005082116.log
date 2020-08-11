@@ -1,0 +1,55 @@
+[2020-05-08 21:16:17,596]: ---mrmd 2.0 start----
+[2020-05-08 21:16:18,324]: ANOVA start...
+[2020-05-08 21:16:18,327]: ANOVA end.
+[2020-05-08 21:16:18,327]: mic start...
+[2020-05-08 21:16:18,542]: mic end.
+[2020-05-08 21:16:18,543]: mrmd start...
+[2020-05-08 21:16:18,569]: mrmd end.
+[2020-05-08 21:16:18,569]: mRMR start...
+[2020-05-08 21:16:18,609]: mRMR end.
+[2020-05-08 21:16:18,610]: lasso start...
+[2020-05-08 21:16:18,627]: lasso end.
+[2020-05-08 21:16:18,628]: chi2 start...
+[2020-05-08 21:16:18,644]: chi2 end.
+[2020-05-08 21:16:18,644]: ref start...
+[2020-05-08 21:16:18,719]: ref end.
+[2020-05-08 21:16:18,748]: Start dimension reduction ...
+[2020-05-08 21:16:21,982]: length=1 f1=0.3200 accuarcy=0.3288 precision=0.3285 recall=0.3288 auc=0.4518 
+[2020-05-08 21:16:22,785]: length=2 f1=0.4251 accuarcy=0.4247 precision=0.4257 recall=0.4247 auc=0.5573 
+[2020-05-08 21:16:23,580]: length=3 f1=0.4915 accuarcy=0.4932 precision=0.4902 recall=0.4932 auc=0.6054 
+[2020-05-08 21:16:23,911]: length=4 f1=0.4882 accuarcy=0.4932 precision=0.4855 recall=0.4932 auc=0.6001 
+[2020-05-08 21:16:24,205]: length=5 f1=0.5207 accuarcy=0.5479 precision=0.5108 recall=0.5479 auc=0.6202 
+[2020-05-08 21:16:24,507]: length=6 f1=0.5764 accuarcy=0.5890 precision=0.5696 recall=0.5890 auc=0.6625 
+[2020-05-08 21:16:24,802]: length=7 f1=0.5271 accuarcy=0.5342 precision=0.5217 recall=0.5342 auc=0.6247 
+[2020-05-08 21:16:25,100]: length=8 f1=0.5250 accuarcy=0.5479 precision=0.5104 recall=0.5479 auc=0.6262 
+[2020-05-08 21:16:25,399]: length=9 f1=0.4820 accuarcy=0.4932 precision=0.4760 recall=0.4932 auc=0.5877 
+[2020-05-08 21:16:25,708]: length=10 f1=0.5558 accuarcy=0.5616 precision=0.5605 recall=0.5616 auc=0.6351 
+[2020-05-08 21:16:26,005]: length=11 f1=0.5588 accuarcy=0.5616 precision=0.5615 recall=0.5616 auc=0.6397 
+[2020-05-08 21:16:26,305]: length=12 f1=0.4770 accuarcy=0.4795 precision=0.4748 recall=0.4795 auc=0.5890 
+[2020-05-08 21:16:26,600]: length=13 f1=0.4940 accuarcy=0.5068 precision=0.4892 recall=0.5068 auc=0.5974 
+[2020-05-08 21:16:26,906]: length=14 f1=0.4649 accuarcy=0.4795 precision=0.4652 recall=0.4795 auc=0.5694 
+[2020-05-08 21:16:27,209]: length=15 f1=0.4727 accuarcy=0.5068 precision=0.4598 recall=0.5068 auc=0.5782 
+[2020-05-08 21:16:27,507]: length=16 f1=0.4793 accuarcy=0.5068 precision=0.4875 recall=0.5068 auc=0.5774 
+[2020-05-08 21:16:27,809]: length=17 f1=0.4377 accuarcy=0.4521 precision=0.4294 recall=0.4521 auc=0.5486 
+[2020-05-08 21:16:28,177]: length=18 f1=0.5047 accuarcy=0.5342 precision=0.5080 recall=0.5342 auc=0.5989 
+[2020-05-08 21:16:28,479]: length=19 f1=0.4742 accuarcy=0.4932 precision=0.4635 recall=0.4932 auc=0.5844 
+[2020-05-08 21:16:28,778]: length=20 f1=0.4455 accuarcy=0.4658 precision=0.4513 recall=0.4658 auc=0.5496 
+[2020-05-08 21:16:28,778]: ----------
+[2020-05-08 21:16:28,779]: the max f1 = 0.5764
+[2020-05-08 21:16:28,779]: ['R' 'T' 'S' 'C' 'Y' 'E'],length = 6
+[2020-05-08 21:16:28,779]: -----------
+[2020-05-08 21:16:29,071]: ***confusion matrix***
+[2020-05-08 21:16:29,071]:                pos_class      neg_class      
+[2020-05-08 21:16:29,071]: pos_class      TP:16             FN:1              
+[2020-05-08 21:16:29,071]: neg_class      FP:1              TN:4              
+[2020-05-08 21:16:29,073]: f1 =0.5764 
+[2020-05-08 21:16:29,074]: accuarcy = 0.5890 
+[2020-05-08 21:16:29,076]: precision =0.5696 
+[2020-05-08 21:16:29,078]: recall =0.5890
+[2020-05-08 21:16:29,083]: auc = 0.6625
+[2020-05-08 21:16:29,088]: -----------
+[2020-05-08 21:16:29,088]: The output by the terminal's log has been saved in the /home/heshida/pycharm_tmp2/Logs/202005082116.log.
+[2020-05-08 21:16:29,088]: metrics have been saved in the /home/heshida/pycharm_tmp2/Results/b.csv.
+[2020-05-08 21:16:30,204]: Scatter charts visualized by t-SNE dataset has been saved in the /home/heshida/pycharm_tmp2/Results/test.csv.png.
+[2020-05-08 21:16:30,205]: Reduced dimensional dataset has been saved in the /home/heshida/pycharm_tmp2/Results/a.csv.
+[2020-05-08 21:16:30,205]: ---mrmd 2.0 end---

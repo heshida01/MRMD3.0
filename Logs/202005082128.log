@@ -1,0 +1,28 @@
+[2020-05-08 21:28:36,204]: ---mrmd 2.0 start----
+[2020-05-08 21:28:36,930]: ANOVA start...
+[2020-05-08 21:28:36,933]: ANOVA end.
+[2020-05-08 21:28:36,933]: mic start...
+[2020-05-08 21:28:37,147]: mic end.
+[2020-05-08 21:28:37,148]: mrmd start...
+[2020-05-08 21:28:37,174]: mrmd end.
+[2020-05-08 21:28:37,174]: mRMR start...
+[2020-05-08 21:28:37,214]: mRMR end.
+[2020-05-08 21:28:37,214]: lasso start...
+[2020-05-08 21:28:37,232]: lasso end.
+[2020-05-08 21:28:37,232]: chi2 start...
+[2020-05-08 21:28:37,247]: chi2 end.
+[2020-05-08 21:28:37,248]: ref start...
+[2020-05-08 21:28:37,321]: ref end.
+[2020-05-08 21:28:37,329]: The final  rank is
+[2020-05-08 21:28:37,367]: Start dimension reduction ...
+[2020-05-08 21:28:40,779]: length=1 f1=0.3200 accuarcy=0.3288 precision=0.3285 recall=0.3288 auc=0.4518 
+[2020-05-08 21:28:41,576]: length=2 f1=0.4251 accuarcy=0.4247 precision=0.4257 recall=0.4247 auc=0.5573 
+[2020-05-08 21:28:42,389]: length=3 f1=0.4915 accuarcy=0.4932 precision=0.4902 recall=0.4932 auc=0.6054 
+[2020-05-08 21:28:42,698]: length=4 f1=0.4882 accuarcy=0.4932 precision=0.4855 recall=0.4932 auc=0.6001 
+[2020-05-08 21:28:43,000]: length=5 f1=0.5207 accuarcy=0.5479 precision=0.5108 recall=0.5479 auc=0.6202 
+[2020-05-08 21:28:43,301]: length=6 f1=0.5764 accuarcy=0.5890 precision=0.5696 recall=0.5890 auc=0.6625 
+[2020-05-08 21:28:43,595]: length=7 f1=0.5271 accuarcy=0.5342 precision=0.5217 recall=0.5342 auc=0.6247 
+[2020-05-08 21:28:43,889]: length=8 f1=0.5250 accuarcy=0.5479 precision=0.5104 recall=0.5479 auc=0.6262 
+[2020-05-08 21:28:44,197]: length=9 f1=0.4820 accuarcy=0.4932 precision=0.4760 recall=0.4932 auc=0.5877 
+[2020-05-08 21:28:44,492]: length=10 f1=0.5558 accuarcy=0.5616 precision=0.5605 recall=0.5616 auc=0.6351 
+[2020-05-08 21:28:44,787]: length=11 f1=0.5588 accuarcy=0.5616 precision=0.5615 recall=0.5616 auc=0.6397 
