@@ -47,4 +47,5 @@ python3  mrmd3.0.py  -i test.csv -o out.csv -r Hits_h
 |recursive feature elimination|*4 LinearSVC,LogisticRegression, RandomForestClassifier,GradientBoostingClassifier|   
 |tree_feature_importance|*3 DecisionTreeClassifier,RandomForestClassifier,GradientBoostingClassifier|   
 
-联系方式： heshida@tju.edu.cn
+# [PySpark Version](https://github.com/heshida01/MRMD3.0/tree/master/spark_version)
+需要安装Spark3.0,依赖包的如下所示：
