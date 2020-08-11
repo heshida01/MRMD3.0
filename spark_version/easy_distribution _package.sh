@@ -21,5 +21,5 @@ user=`whoami`
 ###for exampe :worker1 host: hadoop103 ;worker2 host:hadoop104
 for((host=103; host<105; host++)); do
         echo ------------------- hadoop$host --------------
-        rsync -av $pdir/$fname $user@hadoop$host:$pdir
+        rsync -av $pdir/$fname $user@hadoop$host:$pdir 
 done
