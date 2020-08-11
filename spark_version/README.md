@@ -1,6 +1,7 @@
 ### 1. environment 
 a. Spark3.0  
-b. you need to install the following python packages on the cluster machines：
+b  java jdk1.8
+c. you need to install the following python packages on the cluster machines：
 
   ```
   pyspark==3.0.0  
