@@ -14,6 +14,9 @@ c. you need to install the following python packages on the cluster machines：
   scipy==1.5.0  
   scikit_learn==0.23.2  
   ```
+##### note:
+To facilitate the synchronization of the cluster files, we provide a [Linux script]() here.
+
 ### 2. parameters
  |parameters|description|
 |:-|:-|  
