@@ -37,10 +37,10 @@ python3  mrmd3.0.py  -i test.csv -o out.csv -r Hits_h
 |chisquare|*1  chi2|   
 |F value|*1  f_regression|  
 |linear model|*3 Lasso,LogisticRegression,Ridge|
-|mic |*3 mutual_info_classif|
+|mutual inforation |*3 MI NMI MIC|
 |mrmd|*3 pearson+Euclidean/Tanimoto/Cosine |   
-|mrmr|*2 mid,miq|   
-|recursive feature elimination|*4 LinearSVC,LogisticRegression, RandomForestClassifier,GradientBoostingClassifier|   
+|mrmr|*1 miq|   
+|recursive feature elimination|*5 inearSVC,LogisticRegression, RandomForestClassifier,GradientBoostingClassifier, ComplementNB|   
 |tree_feature_importance|*3 DecisionTreeClassifier,RandomForestClassifier,GradientBoostingClassifier|   
 
 contact heshida@tju.edu.cn
