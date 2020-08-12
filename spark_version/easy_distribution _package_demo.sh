@@ -1,5 +1,6 @@
 #!/bin/bash
-
+####This script in on the master  machine;The worker1 host is hadoop103 and worker2 host is hadoop104(line23~25).
+####example: easy_distribution_package_demo.sh test.txt
 pcount=$#
 if ((pcount==0)); then
 echo no args;
@@ -18,7 +19,7 @@ echo pdir=$pdir
 
 user=`whoami`
 
-###Here :worker1 host: hadoop103 ;worker2 host:hadoop104
+
 for((host=103; host<105; host++)); do
         echo ------------------- hadoop$host --------------
         rsync -av $pdir/$fname $user@hadoop$host:$pdir 
