@@ -14,6 +14,7 @@ d. you need to install the following python packages on the cluster machines：
   matplotlib==3.3.0  
   scipy==1.5.0  
   scikit_learn==0.23.2  
+  pyarrow==0.17.1
   ```
 ##### note:
 To facilitate the synchronization of the cluster files, we provide a [Linux script](https://github.com/heshida01/MRMD3.0/blob/master/spark_version/easy_distribution%20_package_demo.sh) here.
