@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+
 
 
 import findspark
@@ -10,18 +10,13 @@ import pyspark
 import random
 
 
-# In[2]:
 
 
-#sc = pyspark.SparkContext(appName="myapp")
+
 
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("MRMD3.0 Spark").getOrCreate()
 
-
-# ### 开始
-
-# In[3]:
 
 
 from sklearn.datasets import make_classification
@@ -76,14 +71,7 @@ import time
 
 
 
-a = time.time()
-
-
-
-# ### ANOVA
-
-# In[5]:
-
+a = time.time()  #start time
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("-s","--start", dest='s',type=int, help="start index", default=1)
@@ -126,14 +114,6 @@ def ANOVA(X,y,features_name):
     return [x[0] for x in result]
 
 
-# X = df[X_columns]
-# y = df[y_label]
-# ANOVA(X,y,X_columns)
-
-
-# ### MIC
-
-# In[6]:
 
 
 def MIC(X,y,features_name):
@@ -152,12 +132,6 @@ def MIC(X,y,features_name):
     
     return mic_features
 
-
-# X = df[X_columns]
-# y = df[y_label]
-#MIC(X,y,X_columns)
-
-###NMI
 
 def NMI(X,y,features_name):
     NMI_score = {}
@@ -181,9 +155,6 @@ def NMI(X,y,features_name):
 
 
 
-# ### mRMR
-
-# In[7]:
 
 
 def entropy(x):
@@ -314,14 +285,6 @@ def f_value(X,y,features_name):
     result = [(x, y) for x, y in zip(features_name[:], model1.scores_)]
     result = sorted(result, key=lambda x: x[1], reverse=True)
     return [x[0] for x in result]
-# X = df[X_columns]
-# y = df[y_columns]
-#f_value(X,y,X_columns)
-
-
-# ## chi2
-
-# In[9]:
 
 
 
@@ -334,14 +297,7 @@ def chi2_(X,y,features_name):
     result = sorted(result, key=lambda x: x[1], reverse=True)
     return [x[0] for x in result]
 
-# X = df[X_columns]
-# y = df[y_columns]
-#chi2_(X,y,X_columns)
 
-
-# ### linear_model
-
-# In[10]:
 
 
 def lasso(X,y,features_name):
@@ -377,12 +333,6 @@ def logistic(X,y,features_name):
     
     return  [x[0] for x in result]
 
-#ridge(X,y,X_columns)
-
-
-# ### MRMD
-
-# In[11]:
 
 
 def calcE(X,coli,colj):
@@ -545,19 +495,6 @@ def mrmd_t(X,y,features_name):
     return [x[0] for x in mrmd_t]
 
 
-# In[12]:
-
-
-#mrmd_c(X,y,X_columns)
-
-
-# ### mic
-
-# In[13]:
-
-
-### mutual_info
-
 
 def MI(X,y,features_name):
     np.random.seed(1)
@@ -569,12 +506,6 @@ def MI(X,y,features_name):
     result = sorted(result, key=lambda x: x[1], reverse=True)
     return [x[0] for x in result]
 
-#mic(X,y,X_columns)
-
-
-# ###  tree_Fimportance
-
-# In[14]:
 
 
 def tree_Fimportance1(X,y,features_name):
@@ -615,9 +546,6 @@ def tree_Fimportance3(X,y,features_name):
     return  [x[0] for x in result3]
 
 
-# ### RFE
-
-# In[15]:
 
 
 
@@ -658,36 +586,7 @@ def ref5(X,y,features_name):
     selector.fit_transform(X, y)
     result5 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[:]))
     return [x[1] for x in result5]
-# In[16]:
 
-
-#ref4(X,y,X_columns)
-
-
-# ### 构建数据集
-
-# In[17]:
-
-
-# funcs=[ANOVA,MIC,mRMR,f_value,chi2_,lasso,ridge,logistic,mrmd_c,mrmd_e,mrmd_t,mic,tree_Fimportance1,tree_Fimportance2,tree_Fimportance3,ref1,ref2,ref3,ref4]
-# index2funcs = {i:func for i,func in enumerate(funcs)}
-
-# feature_selections_num = len(funcs)
-# frames = []
-
-# X, y = make_classification(n_samples = 100, n_features = 30, n_classes = 2, weights = [0.5,0.5],  n_informative=10,random_state = 1)
-# for id,funcs in enumerate(funcs):
-
-#     df['id'] = id
-#     frames.append(df)
-    
-# final_df = pd.concat(frames)
-# print(final_df.shape,final_df.id.nunique())
-# df_cv = pd.DataFrame({ 'feature_rd_list': feature_cv_order2}).reset_index()
-
-
-# #df_feature_rank_index = pd.DataFrame({ 'feature_method':funcs})
-# funcs
 
 funcs=[ANOVA,MIC,MI,NMI,mRMR,f_value,chi2_,lasso,ridge,logistic,mrmd_c,mrmd_e,mrmd_t,tree_Fimportance1,tree_Fimportance2,tree_Fimportance3,ref1,ref2,ref3,ref4,ref5]
 index2funcs = {i:func for i,func in enumerate(funcs)}
@@ -696,7 +595,7 @@ df_feature_rank_index = pd.DataFrame({ 'feature_method':[x for x in range(len(fu
 df_feature_rank_index
 
 
-# In[18]:
+
 
 
 df_feature_rank_index_spark = spark.createDataFrame(df_feature_rank_index)
@@ -704,9 +603,6 @@ df_feature_rank_index_spark = spark.createDataFrame(df_feature_rank_index)
 df_feature_rank_index_spark.show()
 
 
-# ### 构建udf
-
-# In[19]:
 
 
 schema = StructType([
@@ -734,19 +630,12 @@ def model_results_per_id(df1):
     return model_results
 
 
-# In[20]:
+
 
 
 model_results_by_id = df_feature_rank_index_spark.groupBy('feature_method').apply(model_results_per_id).toPandas()
 
-#print(model_results_by_id)
-# In[21]:
 
-
-#print(model_results_by_id)
-
-
-# In[22]:
 
 
 
@@ -796,10 +685,6 @@ def webpage_rank(features,graph,method,edges):
         return sorted(tr.items(), key=lambda item: item[1], reverse=True)
 
 
-# In[26]:
-
-
-# X_columns
 
 features = {}
 i = 1
@@ -825,7 +710,6 @@ feature_rank_result
 
 # ### 构建交叉验证的数据集
 
-# In[27]:
 
 
 feature_cv_order1 = []
@@ -839,13 +723,7 @@ for elem in feature_rank_result:
 df_cv = pd.DataFrame({ 'feature_rd_list': feature_cv_order2}).reset_index()
 
 
-# In[28]:
 
-
-df_cv
-
-
-# In[31]:
 
 
 schema = StructType([
@@ -891,7 +769,7 @@ def CV_model_results_per_index(df1):
     return model_results
 
 
-# In[32]:
+
 
 
 feature_CV_df_spark = spark.createDataFrame(df_cv)
@@ -899,7 +777,6 @@ res = feature_CV_df_spark.groupBy('index').apply( CV_model_results_per_index).to
 print(res)
 
 
-# In[33]:
 
 
 #result = ast.literal_eval(res['index'][res.f1.idxmax()])
@@ -909,14 +786,14 @@ print(result,eval(f"res['{args.t}'][res.{args.t}.idxmax()]"))
 print(len(result))
 
 
-# In[466]:
+
 
 
 label = y_label
 df_result = df.loc[:,[label]+result]#.astype({label: int})
 
 
-# In[428]:
+
 
 ypred = sklearn.model_selection.cross_val_predict(clf, np.array(df.loc[:,[label]+result]), np.array(df.loc[:,[label]]), n_jobs=-1, cv=5)
 
