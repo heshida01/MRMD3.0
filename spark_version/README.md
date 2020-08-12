@@ -15,7 +15,7 @@ c. you need to install the following python packages on the cluster machines：
   scikit_learn==0.23.2  
   ```
 ##### note:
-To facilitate the synchronization of the cluster files, we provide a [Linux script]() here.
+To facilitate the synchronization of the cluster files, we provide a [Linux script](https://github.com/heshida01/MRMD3.0/blob/master/spark_version/easy_distribution%20_package_demo.sh) here.
 
 ### 2. parameters
  |parameters|description|
