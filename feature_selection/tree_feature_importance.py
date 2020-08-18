@@ -12,7 +12,7 @@ def tree_Fimportance(file):
     X = dataset[:, 1:]
     y = dataset[:, 0]
 
-    rf = RandomForestClassifier()
+    rf = RandomForestClassifier(n_jobs=-1)
     rf.fit(X, y)
     lis1 = rf.feature_importances_
 
