@@ -511,7 +511,7 @@ def MI(X,y,features_name):
 def tree_Fimportance1(X,y,features_name):
 
 
-    rf = RandomForestClassifier(random_state=1)
+    rf = RandomForestClassifier(random_state=1,n_jobs=-1)
     rf.fit(X, y)
     lis1 = rf.feature_importances_
 
@@ -564,7 +564,7 @@ def ref2(X,y,features_name):
     return [x[1] for x in result2]
 
 def ref3(X,y,features_name):
-    estimator = RandomForestClassifier(random_state=1)
+    estimator = RandomForestClassifier(random_state=1,n_jobs=-1)
     selector = RFE(estimator=estimator, n_features_to_select=1)
     selector.fit_transform(X, y)
     result3 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[:]))
@@ -742,7 +742,7 @@ if args.c == "SVM":
 elif args.c == "Bayes":
     clf = GaussianNB()
 else:
-    clf = RandomForestClassifier(random_state=1, n_estimators=100)
+    clf = RandomForestClassifier(random_state=1, n_estimators=100,n_jobs=-1)
 
 @pandas_udf(schema, PandasUDFType.GROUPED_MAP)
 def CV_model_results_per_index(df1):
