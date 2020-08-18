@@ -81,7 +81,7 @@ class Dim_Rd(object):
         elif args.c == "Bayes":
             clf = GaussianNB()
         else:
-            clf = RandomForestClassifier(random_state=1, n_estimators=100)
+            clf = RandomForestClassifier(random_state=1, n_estimators=100,n_jobs=-1)
         # cv_results=cross_validate(clf,X,y,return_train_score=False,cv=10,n_jobs=-1)
 
         ypred = sklearn.model_selection.cross_val_predict(clf, X, y, n_jobs=-1, cv=5)
@@ -194,7 +194,7 @@ class Dim_Rd(object):
         elif args.c == "Bayes":
             clf = GaussianNB()
         else:
-            clf = RandomForestClassifier(random_state=1, n_estimators=100)
+            clf = RandomForestClassifier(random_state=1, n_estimators=100,n_jobs=-1)
         self.Result(seqmax, clf, features, csvfile)
         logger.info('-----------')
 
