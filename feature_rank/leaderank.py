@@ -14,7 +14,7 @@ def leaderrank(graph):
     for node in nodes:
         graph.add_edge(0, node)
 
-    print("graph.edges:",graph.edges())
+    #print("graph.edges:",graph.edges())
 
     # LR值初始化
     LR = dict.fromkeys(nodes, 1.0)
@@ -35,8 +35,8 @@ def leaderrank(graph):
         error = 0.0
         for n in tempLR.keys():
             error += abs(tempLR[n] - LR[n])
-        print(error)
-        if error <= 0.00001:
+        #print(error)
+        if error <= 0.01:
             break
         LR = tempLR
     # 节点g的LR值平均分给其它的N个节点并且删除节点
