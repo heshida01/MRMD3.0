@@ -57,7 +57,7 @@ def ref_(file):
     selector = RFE(estimator=estimator, n_features_to_select=1)
     selector.fit_transform(X, y)
     result5 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[1:]))
-    print(time.time()-start1)
+    #print(time.time()-start1)
  
 
     return ([x[1] for x in result1],
