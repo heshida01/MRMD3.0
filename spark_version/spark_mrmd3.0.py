@@ -549,33 +549,33 @@ def tree_Fimportance3(X,y,features_name):
 
 
 
-def ref1(X,y,features_name):
-    estimator = LinearSVC(random_state=1)
-    selector = RFE(estimator=estimator, n_features_to_select=1)
-    selector.fit_transform(X, y)
-    result1 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[:]))
-    return [x[1] for x in result1]
+# def ref1(X,y,features_name):
+#     estimator = LinearSVC(random_state=1)
+#     selector = RFE(estimator=estimator, n_features_to_select=1)
+#     selector.fit_transform(X, y)
+#     result1 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[:]))
+#     return [x[1] for x in result1]
 
-def ref2(X,y,features_name):
-    estimator = LogisticRegression(random_state=1)
-    selector = RFE(estimator=estimator, n_features_to_select=1)
-    selector.fit_transform(X, y)
-    result2 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[:]))
-    return [x[1] for x in result2]
+# def ref2(X,y,features_name):
+#     estimator = LogisticRegression(random_state=1)
+#     selector = RFE(estimator=estimator, n_features_to_select=1)
+#     selector.fit_transform(X, y)
+#     result2 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[:]))
+#     return [x[1] for x in result2]
 
-def ref3(X,y,features_name):
-    estimator = RandomForestClassifier(random_state=1,n_jobs=-1)
-    selector = RFE(estimator=estimator, n_features_to_select=1)
-    selector.fit_transform(X, y)
-    result3 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[:]))
-    return [x[1] for x in result3]
+# def ref3(X,y,features_name):
+#     estimator = RandomForestClassifier(random_state=1,n_jobs=-1)
+#     selector = RFE(estimator=estimator, n_features_to_select=1)
+#     selector.fit_transform(X, y)
+#     result3 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[:]))
+#     return [x[1] for x in result3]
 
-def ref4(X,y,features_name):
-    estimator =  GradientBoostingClassifier(random_state=1)
-    selector = RFE(estimator=estimator, n_features_to_select=1)
-    selector.fit_transform(X, y)
-    result4 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[:]))
-    return [x[1] for x in result4]
+# def ref4(X,y,features_name):
+#     estimator =  GradientBoostingClassifier(random_state=1)
+#     selector = RFE(estimator=estimator, n_features_to_select=1)
+#     selector.fit_transform(X, y)
+#     result4 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[:]))
+#     return [x[1] for x in result4]
 
 
 def ref5(X,y,features_name):
@@ -588,7 +588,8 @@ def ref5(X,y,features_name):
     return [x[1] for x in result5]
 
 
-funcs=[ANOVA,MIC,MI,NMI,mRMR,f_value,chi2_,lasso,ridge,logistic,mrmd_c,mrmd_e,mrmd_t,tree_Fimportance1,tree_Fimportance2,tree_Fimportance3,ref1,ref2,ref3,ref4,ref5]
+#funcs=[ANOVA,MIC,MI,NMI,mRMR,f_value,chi2_,lasso,ridge,logistic,mrmd_c,mrmd_e,mrmd_t,tree_Fimportance1,tree_Fimportance2,tree_Fimportance3,ref1,ref2,ref3,ref4,ref5]
+funcs=[ANOVA,MIC,MI,NMI,mRMR,f_value,chi2_,lasso,ridge,logistic,mrmd_c,mrmd_e,mrmd_t,tree_Fimportance1,tree_Fimportance2,tree_Fimportance3,ref5]
 index2funcs = {i:func for i,func in enumerate(funcs)}
 df_feature_rank_index = pd.DataFrame({ 'feature_method':[x for x in range(len(funcs))]})
 #print(index2funcs)

@@ -8,8 +8,10 @@ from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 import numpy as np
 from sklearn.naive_bayes import ComplementNB
+import time
 
 def ref_(file):
+    start1 = time.time()
     dataset = pd.read_csv(file,engine='python').dropna(axis=1)
     features_name = dataset.columns.values.tolist()
     dataset = np.array(dataset)
@@ -17,35 +19,46 @@ def ref_(file):
     y = dataset[:, 0]
     scaler = MinMaxScaler()
     X = scaler.fit_transform(X)
-    estimator = LinearSVC(random_state=1)
-    selector = RFE(estimator=estimator, n_features_to_select=1)
-    selector.fit_transform(X, y)
+    # estimator = LinearSVC(random_state=1)
+    # selector = RFE(estimator=estimator, n_features_to_select=1)
+    # selector.fit(X, y)
+    #
+    # #print(list(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[1:])))
+    # #result = sorted(result, key=lambda x: x[1], reverse=True)
+    # result1 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[1:]))
+    #
+    # print(time.time()-start1)
+    # start1 = time.time()
+    # estimator = LogisticRegression(random_state=1)
+    # selector = RFE(estimator=estimator, n_features_to_select=1)
+    # selector.fit_transform(X, y)
+    # result2 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[1:]))
+    # print(time.time()-start1)
+    # start1 = time.time()
 
-    #print(list(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[1:])))
-    #result = sorted(result, key=lambda x: x[1], reverse=True)
-    result1 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[1:]))
+    # estimator = RandomForestClassifier(random_state=1)
+    # selector = RFE(estimator=estimator, n_features_to_select=1)
+    # selector.fit_transform(X, y)
+    # result3 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[1:]))
+    # print(time.time()-start1)
+    # start1 = time.time()
 
-
-    estimator = LogisticRegression(random_state=1)
-    selector = RFE(estimator=estimator, n_features_to_select=1)
-    selector.fit_transform(X, y)
-    result2 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[1:]))
-
-    estimator = RandomForestClassifier(random_state=1)
-    selector = RFE(estimator=estimator, n_features_to_select=1)
-    selector.fit_transform(X, y)
-    result3 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[1:]))
-
-
-    estimator = GradientBoostingClassifier(random_state=1)
-    selector = RFE(estimator=estimator, n_features_to_select=1)
-    selector.fit_transform(X, y)
-    result4= sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[1:]))
-
+    # estimator = GradientBoostingClassifier(random_state=1)
+    # selector = RFE(estimator=estimator, n_features_to_select=1)
+    # selector.fit_transform(X, y)
+    # result4= sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[1:]))
+    # print(time.time()-start1)
+    # start1 = time.time()
+    result1 = []
+    result2 = []
+    result3 = []
+    result4 = []
     estimator = ComplementNB()
     selector = RFE(estimator=estimator, n_features_to_select=1)
     selector.fit_transform(X, y)
     result5 = sorted(zip(map(lambda x: round(x, 4), selector.ranking_), features_name[1:]))
+    print(time.time()-start1)
+ 
 
     return ([x[1] for x in result1],
             [x[1] for x in result2],

@@ -29,7 +29,7 @@ edges = [(0, 2),
 G.add_edges_from(edges)
 
 h,a=nx.hits(G)
-nx.draw(G,with_labels=True)
+#nx.draw(G,with_labels=True)
 
 #plt.show() # display
 print(h,a)

@@ -172,8 +172,11 @@ class MRMR():
 
 
 def mRMR(X,y,features_name):
-
-    mrmr = MRMR(n_features=50)
+    if len(X.iloc[1,:])>=30:
+        n = 30
+    else:
+        n = len(X.iloc[1,:])
+    mrmr = MRMR(n_features=n)
     return mrmr.fit(X, y, features_name,threshold=0.1)
 
 def run(filecsv,logger):
