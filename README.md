@@ -40,7 +40,7 @@ python3  mrmd3.0.py  -i test.csv -o out.csv -r Hits_h
 |mutual inforation |*3 MI NMI MIC|
 |mrmd|*3 pearson+Euclidean/Tanimoto/Cosine |   
 |mrmr|*1 miq|   
-|recursive feature elimination|*5 inearSVC,LogisticRegression, RandomForestClassifier,GradientBoostingClassifier, ComplementNB|   
+|recursive feature elimination|*1 ComplementNB|   
 |tree_feature_importance|*3 DecisionTreeClassifier,RandomForestClassifier,GradientBoostingClassifier|   
 
 contact heshida@tju.edu.cn
