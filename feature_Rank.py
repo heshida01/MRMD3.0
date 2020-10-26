@@ -128,7 +128,7 @@ def webpage_rank(features,graph,method,edges):
         h, a = nx.hits(graph)
         return sorted(h.items(), key=lambda x: x[1], reverse=True)
     elif method.lower() == "leaderrank":
-        lr = leaderrank(edges)
+        lr = leaderrank(graph)
         #print("leaderrank+++++++++++",lr.items())
         return sorted(lr.items(), key=lambda item: item[1], reverse=True)
     else:   ###trustrank
