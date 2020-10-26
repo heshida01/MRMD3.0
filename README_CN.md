@@ -44,7 +44,7 @@ python3  mrmd3.0.py  -i test.csv -o out.csv -r Hits_h
 |mic |*3 mutual_info_classif|
 |mrmd|*3 pearson+Euclidean/Tanimoto/Cosine |   
 |mrmr|*2 mid,miq|   
-|recursive feature elimination|*4 LinearSVC,LogisticRegression, RandomForestClassifier,GradientBoostingClassifier|   
+|recursive feature elimination|*1 bayes|   
 |tree_feature_importance|*3 DecisionTreeClassifier,RandomForestClassifier,GradientBoostingClassifier|   
 
 # [PySpark Version](https://github.com/heshida01/MRMD3.0/tree/master/spark_version)
