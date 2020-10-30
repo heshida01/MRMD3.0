@@ -5,7 +5,7 @@
 MRND3.0 can be used directly in an Anaconda environment without the following command.  
 environment(python3):  
   ```
-  pip3 install -r requirements.txt --ignore-installed
+  pip3 install -r requirements.txt 
   ```  
   
  #### 2. parameters:
