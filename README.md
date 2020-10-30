@@ -15,7 +15,7 @@ environment(python3):
 |-i, --inputfile|input file (require:arff ,csv or libsvm format)|   
 |-e, --end|end index, default=-1|  
 |-l, --length|step length, default=1|
-|-n, --n_dim|mrmd2.0 features top n,default=-1|
+|-n, --n_dim|mrmd3.0 features top n,default=-1|
 |-t, --type_metric|evaluation metric, default=f1 |   
 |-m, metrics_file|output the metrics file's name|   
 |-o, --outfile|output the dimensionality reduction file's name|   
