@@ -3,7 +3,7 @@
 #### 1.Installation：
 *Download*： [github](https://github.com/heshida01/MRMD3.0)  
 MRND3.0 can be used directly in an Anaconda environment without the following command.  
-environment(python3):  
+environment(recommend python3.6):  
   ```
   pip3 install -r requirements.txt 
   ```  
