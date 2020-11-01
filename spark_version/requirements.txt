@@ -8,3 +8,4 @@ minepy==1.2.4
 matplotlib==3.3.0
 scipy==1.5.0
 scikit_learn==0.23.2
+pyarrow==0.17.1
