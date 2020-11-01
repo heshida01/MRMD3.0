@@ -116,7 +116,7 @@ def webpage_rank(features,graph,method,edges):
             rank_result[elem4[0]] += elem4[1]
             rank_result[elem5[0]] += elem5[1]
         rank_result_list = sorted(rank_result.items(), key=lambda item: item[1], reverse=True)
-        print(rank_result_list)
+        #print(rank_result_list)
         return rank_result_list
     elif method.lower() == "pagerank":
         pr = nx.pagerank(graph)
