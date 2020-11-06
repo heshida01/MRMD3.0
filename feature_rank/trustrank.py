@@ -1,7 +1,8 @@
 import tempfile
 import os
 from feature_rank.PageRank.main import run
-
+import time
+import platform
 def TrustRank_data_map(feature_order_list_elem):
 
     return (features_number_g[feature_order_list_elem[0]],features_number_g[feature_order_list_elem[1]])
@@ -12,15 +13,22 @@ def trustrank(features_number:dict,feature_order_list:list):
     global  features_number_g
     features_number_g = features_number
     feature_len = len(features_number_g)
-
-    tmp = tempfile.NamedTemporaryFile(delete=True)
+    osName = platform.system()
+    if(osName == 'Windows'):
+        tmp = tempfile.NamedTemporaryFile(delete=False)
+    else:
+        tmp = tempfile.NamedTemporaryFile(delete=True)
     with open(tmp.name,'w+') as fp:
+
         TrustRank_data = list(map(TrustRank_data_map, feature_order_list))
 
         for x in TrustRank_data:
-            content = str(x[0]) + ' ' + str(x[1]) + os.linesep
+           
+            content = str(x[0]) + ' ' + str(x[1]) + '\n'
+            
             fp.write(content)
         fp.seek(0)
+        #print('###')
         #print(str(fp.readlines()))
 
         location_of_the_edge_file = tmp.name
@@ -34,6 +42,7 @@ def trustrank(features_number:dict,feature_order_list:list):
         for key in features_number_g:
             features_number_g[key]=tr[features_number_g[key]]
         #print(features_number_g)
+        print(features_number_g)
         return features_number_g
 if __name__ == '__main__':
     features_number = {'A': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8, 'K': 9, 'L': 10, 'M': 11, 'N': 12
