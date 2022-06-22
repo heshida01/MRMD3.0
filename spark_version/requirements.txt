@@ -1,7 +1,7 @@
 pyspark==3.0.0
 findspark==1.4.2
 
-numpy==1.19.0
+numpy==1.22.0
 networkx==2.4
 pandas==1.0.5
 minepy==1.2.4
