@@ -46,7 +46,10 @@ Parameters
 |recursive_feature_elimination|1. LogisticRegression, 2.SVM , 3. DecisionTreeClassifier|   
 |tree_feature_importance| 1. DecisionTreeClassifier, 2. RandomForestClassifier, 3. GradientBoostingClassifier 4.ExtraTreesClassifier|   
 ##### example
+```
 python mrmd_fs.py  test.csv  linear_models lasso
+```
+The outputs are ranked according to the features from large to small scores.
 <br>
 contact heshida@tju.edu.cn
 
