@@ -1,0 +1,16 @@
+   [
+
+        "ANOVA","chisquare","F_value",
+        "IC","MIC",'NMI',
+        "MRMD Cos","MRMD Tan","MRMD Euc"
+        "mRMR",
+        'LogisticRegression', 'PassiveAggressiveClassifier', 'SGDClassifier', 'RidgeClassifier', 'ElasticNet', 'Lasso',
+        'DecisionTree','RandomForest','GradientBoosting',
+    ]    
+,
+    [
+        "LinearSVC","LinearSVR",
+         'ComplementNB','MultinomialNB','BernoulliNB',
+        "Lasso","Ridge","ElasticNet",
+        "DecisionTreeClassifier","RandomForestClassifier","GradientBoostingClassifier""
+    ]
