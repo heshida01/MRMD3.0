@@ -1,10 +1,17 @@
-numpy==1.19.0
-networkx==2.4
-pandas==1.0.5
-minepy==1.2.4
-matplotlib==3.3.0
-scipy==1.5.0
-scikit_learn==0.23.2
+category_encoders==2.5.0
+joblib==1.1.0
+matplotlib==3.5.2
+minepy==1.2.6
+networkx==2.8.4
+numpy==1.23.1
+pandas==1.4.3
+Pillow==9.2.0
+plotly==5.9.0
+pydicom==2.3.0
+scikit_learn==1.1.1
+scipy==1.8.1
+seaborn==0.11.2
+
 
 
 
