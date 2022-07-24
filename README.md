@@ -1,7 +1,7 @@
 ## [MRMD3.0](http://lab.malab.cn/soft/MRMD3.0/index_en.html)
 #### [Spark Version(click here)](https://github.com/heshida01/MRMD3.0/tree/master/spark_version)
 #### 1.Installation：
-*Download*： [github](https://github.com/heshida01/MRMD3.0)  
+*WebServer*： [github](https://github.com/heshida01/MRMD3.0)  
 MRND3.0 can be used directly in an Anaconda environment without the following command.  
 environment(recommend python3.6):  
   ```
