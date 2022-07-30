@@ -91,9 +91,9 @@ def feature_rank(file,logger,rank_method = None,mode = "0",n_jobs = 1):
 
         feature_rank_result = [ANOVA_data,MI,NMI,MIC,mrmd_c, mrmd_e, mrmd_t,miq,mid,lasso,ridge,logistic,chi2_data,t1,t2,t3,t4,ref1,ref2,ref3]
 
-    print("###############",rank_method)
+
     if rank_method != None:
-        print("################")
+
         edges = node2edge(feature_rank_result)
         G = nx.DiGraph()
         G.add_edges_from(edges)
@@ -258,7 +258,7 @@ def node_features_rank(features,select_features,not_select_features):
     return  sorted(features.items(),key=lambda x: x[1], reverse=True)
 
 def webpage_rank(features,graph,method,edges):
-    print("method",method)
+
     if str(method).lower() == "vote":
         pr = nx.pagerank(graph)
         h, a = nx.hits(graph)
