@@ -578,7 +578,7 @@ if __name__ == '__main__':
             f'./Results/{os.path.splitext(os.path.basename(csvfile))[0]}.heatmap.png',
             dpi=300)
 
-        plt.show()
+        #plt.show()
 
     heatmap_(csvfile,args.f)
 
