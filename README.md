@@ -100,5 +100,8 @@ add HITS LeaderRank TrustRank
 If you have any questions.please contact me (heshida@tju.edu.cn)
 
 ## reference:  
-Shida He, Fei Guo, Quan Zou*, Hui Ding. MRMD2.0: A Python Tool for Machine Learning with Feature Ranking and Reduction. Current Bioinformatics 2020. DOI:10.2174/1574893615999200503030350. 
+He, S., Ye, X., Sakurai, T., & Zou, Q. (2023). MRMD3. 0: A Python Tool and Webserver for Dimensionality Reduction and Data Visualization via an Ensemble Strategy. Journal of Molecular Biology, 168116.
 
+He, S., Guo, F., & Zou, Q. (2020). MRMD2. 0: a python tool for machine learning with feature ranking and reduction. Current Bioinformatics, 15(10), 1213-1221.
+
+Zou, Quan, et al. "A novel features ranking metric with application to scalable visual and bioinformatics data classification." Neurocomputing 173 (2016): 346-354.
