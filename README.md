@@ -2,21 +2,7 @@
 # mrmd2.0.py 
 [WebServer](http://lab.malab.cn:5001/MRMD2.0/Home) ,  [Chinese version](https://github.com/heshida01/MRMD2.0/blob/master/README_CN.md)
 # News  
-### The mrmd2.0 environment can now be deployed with docker.   
-[Docker installation reference1](https://www.docker.com/products/docker-desktop)  ,   [Docker installation reference2](https://github.com/komavideo/LearnDocker/tree/master/Lesson02)  
-##### pull the image
-  ```
-  git clone https://github.com/heshida01/MRMD2.0.git  
-  cd MRMD2.0  
-  sudo docker pull heshida/mrmd2.0:latest
-  ```  
-##### usage:  
-  ```
-  sudo python3 docker_mrmd2.0.py -i test.csv
-  ```
-  Please find the results in 'Results' folder
 
-###  If you don't want to use docker,You can also install it using the following method:
 #### 1. Installation：
 We recommend using [miniconda3-4.3.31](https://repo.anaconda.com/miniconda/)(or python3.6), support linux,windows.  
 
@@ -62,9 +48,9 @@ We recommend using [miniconda3-4.3.31](https://repo.anaconda.com/miniconda/)(or 
 For feature selection:
  
 ```
-python3  mrmd2.0.py  -i test.csv -o metrics.csv  -c Dimensionalized_dataset.csv
-python3  mrmd2.0.py  -i test.arff -o metrics.csv  -c Dimensionalized_dataset.arff
-python3  mrmd2.0.py  -i test.libsvm -o metrics.csv  -c Dimensionalized_dataset.libsvm
+python3  mrmd3.0.py  -i test.csv -o out.csv
+python3  mrmd3.0.py  -i test.arff -o out.arff
+python3  mrmd3.0.py  -i test.libsvm -o metrics.csv  -c out.libsvm
 ```
 For whole-transcriptome (gene selection):
 ```
@@ -83,7 +69,7 @@ data = np.hstack((data,Y.reshape(-1,1)))
 data = pd.DataFrame(data)
 data.to_csv('pbmc68k_reduced.csv',index=False,header=False)
 ###select top 100 genes
-!python3  mrmd2.0.py  -i test.csv -o metrics.csv  -c Dimensionalized_dataset.csv -n 100
+!python3  mrmd3.0.py  -i test.csv -o metrics.csv  -c Dimensionalized_dataset.csv -n 100
 ```
 
 #### 4. FAQs
