@@ -47,7 +47,7 @@ For feature selection:
 ```
 python3  mrmd3.0.py  -i test.csv -o out.csv
 python3  mrmd3.0.py  -i test.arff -o out.arff
-python3  mrmd3.0.py  -i test.libsvm -o metrics.csv  -c out.libsvm
+python3  mrmd3.0.py  -i test.libsvm -o  out.libsvm
 ```
 For whole-transcriptome (gene selection):
 ```
