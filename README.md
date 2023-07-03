@@ -1,7 +1,4 @@
 # [MRMD3.0](https://github.com/heshida01/MRMD3.0/) - the newest version of MRMD is now available!
-# mrmd2.0.py 
-[WebServer](http://lab.malab.cn:5001/MRMD2.0/Home) ,  [Chinese version](https://github.com/heshida01/MRMD2.0/blob/master/README_CN.md)
-# News  
 
 #### 1. Installation：
 We recommend using [miniconda3-4.3.31](https://repo.anaconda.com/miniconda/)(or python3.6), support linux,windows.  
