@@ -73,8 +73,8 @@ def run(csvfile, logger):
         mydict.update({"task_1": task_1.get(), "task_2": task_3.get(),"task_3": task_2.get()})
 
     result1 = mydict['task_1']
-    result2 = mydict['task_1']
-    result3 = mydict['task_1']
+    result2 = mydict['task_2']
+    result3 = mydict['task_3']
     logger.info('MI end.')
 
     return (result1,result2,result3)
